@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Calculator</title>
+      <style>
+            * {
+                  margin: 0px;
+                  padding: 0px;
+                  box-sizing: border-box;
+            }
+
+            body {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+            
+            }
+            body {
+  background-image: url('./grunge.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+             
+            .calculator {
+                  width: 17%;
+                  height: 462px;
+                  border-radius: 19px;
+                  margin-top: 60px; 
+                  position: relative; 
+                  background-color:black;
+                 
+            }
+
+            #input {
+                  width: 100%;
+                  height: 143px;
+                  background-color:#000000;
+                  color: white;
+                  border: none;
+                  
+                  border-radius: 5px;
+                  margin-bottom: 10px;  
+                  text-align: right; 
+                  font-size: 3rem; 
+                  padding: 20px;
+                  
+            }
+            button {
+                  width: 20%;
+                  height: 54px; 
+                   color: white;
+                   font-weight: bold;
+                   font-size: large;
+                   background-color: rgb(83, 50, 7);
+                   margin-left: 5px;
+                   margin-top: 5px;
+                   border-radius: 8px;
+                   border: none;
+            }
+               #equal  {
+               height: 233px;
+               position: absolute;
+               margin-left: 9px; 
+              background-color: rgb(197, 130, 7);
+
+            }
+            #opt{
+                  background-color: gray;
+            }
+      </style>
+</head>
+
+<body>
+      
+      
+      <div class="calculator">
+            <input id="input" placeholder="24 + 10"><br>
+            <button id="opt"   onclick="getNumber('+')">+</button>
+            <button id="opt"   onclick="getNumber('-')">-</button>
+            <button  id="opt"  onclick="getNumber('*')">x</button>
+            <button  id="opt"  onclick="getNumber('/')">/</button>
+            <br>
+            <button onclick="getNumber(7)">7</button>
+            <button onclick="getNumber(8)">8</button>
+            <button onclick="getNumber(9)">9</button>
+            <button  id="equal" onclick="calculate('=')">=</button>
+             <br>
+            <button onclick="getNumber(4)">4</button>
+            <button onclick="getNumber(5)">5</button>
+            <button onclick="getNumber(6)">6</button> <br>
+            <button onclick="getNumber(1)">1</button>
+            <button onclick="getNumber(2)">2</button>
+            <button onclick="getNumber(3)">3</button> <br>
+            <button onclick="getNumber( 0 )">0</button>
+            <button onclick="getNumber( '.')">.</button>
+            <button onclick="del()">C</button>
+           
+      </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+      <script src="script.js"></script>
+</body>
+
+</html>
